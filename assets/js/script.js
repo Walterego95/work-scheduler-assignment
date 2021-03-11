@@ -13,7 +13,6 @@ $(document).ready(function() {
 function generateTimeBlock(index, hour) {
     let block_class = "";
 
-    // transform this into switch case...
     if(i < hour) {
         block_class = "past";
     } else {
@@ -26,8 +25,19 @@ function generateTimeBlock(index, hour) {
 
     let time_block = "<div class='time-block row " + block_class + "'>";
     time_block += "<span class='hour'>" + index + ":00</span>";
-    time_block += "<input class='time_block_text' type='text' id='text_" + index + "' name='text_" + i + "'>";
-    time_block += "<button class='saveBtn'>Save</button>";
+    
+    time_block += "<input class='time_block_text' type='text' id='text_" + index + "' name='text_" + i + "'";
+    if(block_class == "past" || block_class == "present") {
+        time_block += " disabled ";
+    }
+    time_block += ">";
+    
+    time_block += "<button class='saveBtn'";
+    if(block_class == "past" || block_class == "present") {
+        time_block += " disabled ";
+    }
+    time_block += ">Save</button>";
     time_block += "</div>";
+
     return time_block;
 }
