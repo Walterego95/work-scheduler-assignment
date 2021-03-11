@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -33,7 +33,9 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  justify-content: space-between;
+  display: flex;  
 }
 
 .hour {
@@ -50,8 +52,14 @@ textarea{
 }
 
 .time_block_text {
-  width: 70%;
+  width: 80%;
   background: transparent;
+  border: none;
+}
+
+input:focus,
+button:focus {
+    outline: none;
 }
 
 .present {
@@ -65,6 +73,7 @@ textarea{
 }
 
 .saveBtn {
+  width: 10%;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
