@@ -12,7 +12,7 @@
   </ul>
 
 <h2>Web Application URL</h2>
-<a href="https://walterego95.github.io/work-scheduler-assignment/">(Walter Scimone Work Day Scheduler</a>
+<a href="https://walterego95.github.io/work-scheduler-assignment/">Walter Scimone Work Day Scheduler</a>
 
 <h2>Landing Web App Image</h2>
 <img src="./work-scheduler-preview.png" alt="web app image screenshot" />
